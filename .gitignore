@@ -1,0 +1,6 @@
+temporal.exe
+.env
+.venv/
+data/raw/*.csv
+__pycache__/
+*.db
