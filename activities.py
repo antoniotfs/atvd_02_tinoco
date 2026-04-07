@@ -8,7 +8,7 @@ load_dotenv()
 
 @activity.defn
 async def generate_csv_activity() -> str:
-    from app.generate_fake_csv import main
+    from generate_fake_csv import main
     main()
     return "data/raw/orders_fake_10mb.csv"
 

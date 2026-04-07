@@ -2,7 +2,7 @@ from datetime import timedelta
 from temporalio import workflow
 
 with workflow.unsafe.imports_passed_through():
-    from app.activities import generate_csv_activity, load_to_mongo
+    from activities import generate_csv_activity, load_to_mongo
 
 @workflow.defn
 class OrdersWorkflow:

@@ -1,8 +1,8 @@
 import asyncio
 from temporalio.client import Client
 from temporalio.worker import Worker
-from app.activities import generate_csv_activity, load_to_mongo
-from app.workflows import OrdersWorkflow
+from activities import generate_csv_activity, load_to_mongo
+from workflows import OrdersWorkflow
 
 async def main():
     client = await Client.connect("localhost:8081")

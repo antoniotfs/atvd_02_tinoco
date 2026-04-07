@@ -1,6 +1,6 @@
 import asyncio
 from temporalio.client import Client
-from app.workflows import OrdersWorkflow
+from workflows import OrdersWorkflow
 
 async def main():
     client = await Client.connect("localhost:8081")
